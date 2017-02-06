@@ -1,0 +1,12 @@
+{
+  "mongo": {
+    "host": "example.com",
+    "port": 1337,
+    "url": "",
+    "database": "example",
+    "password": "password",
+    "name": "example",
+    "user": "example",
+    "connector": "mongodb"
+  }
+}

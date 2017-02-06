@@ -1,0 +1,35 @@
+{
+  "name": "Post",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "creation": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "comments": {
+      "type": "hasMany",
+      "model": "Comment",
+      "foreignKey": ""
+    },
+    "board": {
+      "type": "belongsTo",
+      "model": "Board",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+
+  ],
+  "methods": {}
+}
